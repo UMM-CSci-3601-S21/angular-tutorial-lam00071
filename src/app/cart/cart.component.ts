@@ -9,9 +9,13 @@ import { CartService } from '../cart.service';
 })
 export class CartComponent {
   items = this.cartService.getItems();
-
+  checkoutForm = this.formBuilder.group({
+    name: '',
+    address: ''
+  });
   constructor(
-    private cartService: CartService
-  ) { }
+    private cartService: CartService,
+    private formBuilder: FormBuilder,
+    ) {}
 
 }
