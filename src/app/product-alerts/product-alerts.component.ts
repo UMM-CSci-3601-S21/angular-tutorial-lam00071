@@ -12,7 +12,7 @@ export class ProductAlertsComponent implements OnInit {
   @Input() product;
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }
