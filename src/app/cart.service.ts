@@ -11,11 +11,11 @@ export class CartService {
     this.items.push(product);
   }
 
-  getItems(): Array<JSON>{
+  getItems(): any[] {
     return this.items;
   }
 
-  clearCart(): Array<JSON> {
+  clearCart(): any[] {
     this.items = [];
     return this.items;
   }
