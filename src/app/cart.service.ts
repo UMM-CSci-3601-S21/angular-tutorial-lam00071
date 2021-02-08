@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { products } from './products';
 
 @Injectable({
   providedIn: 'root'
@@ -6,15 +7,15 @@ import { Injectable } from '@angular/core';
 export class CartService {
   items = [];
 
-  addToCart(product) {
+  addToCart(product): void {
     this.items.push(product);
   }
 
-  getItems() {
+  getItems(): Array<JSON>{
     return this.items;
   }
 
-  clearCart() {
+  clearCart(): Array<JSON> {
     this.items = [];
     return this.items;
   }
