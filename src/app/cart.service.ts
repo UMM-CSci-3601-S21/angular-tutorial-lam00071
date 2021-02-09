@@ -23,7 +23,7 @@ export class CartService {
   }
 
   getShippingPrices(): Observable<object> {
-    return this.http.get('/assets/shipping.json');
+    return this.http.get('./assets/shipping.json');
   }
   constructor(
     private http: HttpClient
